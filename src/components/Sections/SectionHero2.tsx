@@ -24,10 +24,10 @@ const SectionHero2: FC<SectionHero2Props> = ({}) => {
     return (
       <div className="aspect-w-16 aspect-h-9 ">
         <iframe
-          src={`https://www.youtube.com/embed/qTsXfGVjm1w?autoplay=1`}
+          src={`https://www.youtube.com/embed/uc2f2yQElew?si=h3X4A7wot0eCqY8d&amp;start=571?autoplay=1`}
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-          title="ncblog hero video"
+          allowFullScreen 
+          title="Video coffee tech"
         ></iframe>
       </div>
     );
@@ -48,15 +48,13 @@ const SectionHero2: FC<SectionHero2Props> = ({}) => {
       <div className="container relative z-10 text-neutral-100">
         <div className="max-w-3xl">
           <h1 className="font-bold text-4xl md:text-5xl xl:text-6xl mt-3 md:!leading-[110%] ">
-            The hidden world of whale culture
+            Caro Insights
           </h1>
           <p className="mt-7 text-base lg:text-xl text-neutral-300 ">
-            From singing competitions to food preferences, scientists are
-            learning whales have cultural differences once thought to be unique
-            to humans.
+           Te doy la bienvenida a este espacio donde aprendemos sobre tecnología e innovación.
           </p>
           <div className="flex space-x-4 rtl:space-x-reverse mt-11">
-            <ButtonPrimary href="/">Read more</ButtonPrimary>
+            <ButtonPrimary href="/">Más información</ButtonPrimary>
 
             <NcModal
               isOpenProp={showVideo}
