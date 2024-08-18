@@ -26,6 +26,7 @@ const MAGAZINE2_POSTS = DEMO_POSTS.filter((_, i) => i >= 0 && i < 7);
 
 const PageHomeDemo2: React.FC = () => {
   return (
+   
     <div className="nc-PageHomeDemo2 relative">
       <div className="container relative">
         <SectionHero3 className="pb-16 lg:pb-28" posts={MAGAZINE1_POSTS} />
