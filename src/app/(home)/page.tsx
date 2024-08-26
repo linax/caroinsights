@@ -86,6 +86,17 @@ const PageHomeDemo4: React.FC = () => {
         <SectionHero2 />
         <div className="relative overflow-hidden">
           <div className="container relative">
+          <div className="relative py-16">
+              <BackgroundSection />
+              <SectionGridPosts
+                headingIsCenter
+                postCardName="card10V2"
+                heading="Coffee Tech Insights - Videopodcast"
+                subHeading="Revisa nuestros últimos episodios 🥡"
+                posts={DEMO_POSTS_VIDEO}
+                gridClass="sm:grid-cols-2 lg:grid-cols-3"
+              />
+            </div>
             <SectionTrending
               heading=""
               className="py-16 lg:py-28"
@@ -116,21 +127,11 @@ const PageHomeDemo4: React.FC = () => {
 
             <SectionSubscribe2 className="py-16 lg:py-28" />
 
-            <SectionAds />
+           
 
             <SectionVideos className="py-16 lg:py-28" />
 
-            <div className="relative py-16">
-              <BackgroundSection />
-              <SectionGridPosts
-                headingIsCenter
-                postCardName="card10V2"
-                heading="Explore latest video articles"
-                subHeading="Hover on the post card and preview video 🥡"
-                posts={DEMO_POSTS_VIDEO.filter((_, i) => i > 5 && i < 12)}
-                gridClass="sm:grid-cols-2 lg:grid-cols-3"
-              />
-            </div>
+        
 
             <SectionBecomeAnAuthor
               className="py-16 lg:py-28"

@@ -5,10 +5,11 @@ import ButtonPrimary from "@/components/Button/ButtonPrimary";
 import NcModal from "@/components/NcModal/NcModal";
 import { PlayIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
+import Banner from "@/images/banner-dev.jpeg";
 import Button from "../Button/Button";
 
 export interface SectionHero2Props {}
-const SectionHero2: FC<SectionHero2Props> = ({}) => {
+const   SectionHero2: FC<SectionHero2Props> = ({}) => {
   const [showVideo, setShowVideo] = useState(false);
 
   const renderOpenModalVideo = () => {
@@ -27,7 +28,7 @@ const SectionHero2: FC<SectionHero2Props> = ({}) => {
           src={`https://www.youtube.com/embed/uc2f2yQElew?si=h3X4A7wot0eCqY8d&amp;start=571?autoplay=1`}
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen 
-          title="Video coffee tech"
+          title="Video coffee tech insights"
         ></iframe>
       </div>
     );
@@ -40,7 +41,7 @@ const SectionHero2: FC<SectionHero2Props> = ({}) => {
         <Image
           fill
           className="object-cover"
-          src="https://images.pexels.com/photos/4666750/pexels-photo-4666750.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+          src={Banner}
           sizes="1260px"
           alt="hero"
         />
