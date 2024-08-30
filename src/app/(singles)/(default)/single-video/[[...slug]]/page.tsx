@@ -20,7 +20,7 @@ const PageSv = ({}) => {
       <div>
         {isRendered ? (
           <ReactPlayer
-            url="https://www.youtube.com/watch?v=nOQyWbPO2Ds"
+            url="https://youtu.be/J0ulGaiZEmc?si=iGNwaBUBOPPaNy1k"
             className="absolute inset-0"
             playing={true}
             width="100%"
@@ -43,7 +43,7 @@ const PageSv = ({}) => {
           />
           <SingleTitle
             mainClass="text-neutral-900 font-semibold text-3xl md:!leading-[120%] dark:text-neutral-100"
-            title={"Julio Urías does it all as Dodgers sweep in San Francisco"}
+            title={"Desde Chile al mundo 🌍: La historia de una chilena trabajando en Spotify"}
           />
 
           <div className="w-full border-b border-neutral-100 dark:border-neutral-800" />

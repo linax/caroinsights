@@ -2,7 +2,7 @@ import __authors from "./jsons/__users.json";
 import a1 from "./avatars/1.jpg";
 import a2 from "./avatars/2.jpg";
 import a3 from "./avatars/3.jpg";
-import a4 from "./avatars/4.jpg";
+import a4 from "./avatars/CoffeeTech.png";
 import a5 from "./avatars/12.jpg";
 import a6 from "./avatars/6.jpg";
 import a7 from "./avatars/7.jpg";

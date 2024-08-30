@@ -12,7 +12,7 @@
     "readingTime": 2,
     "bookmark": { "count": 3007, "isBookmarked": false },
     "like": { "count": 3366, "isLiked": true },
-    "authorId": 3,
+    "authorId": 4,
     "categoriesId": [3, 12],
     "postType": "video",
     "videoUrl": "https://youtu.be/J0ulGaiZEmc?si=iGNwaBUBOPPaNy1k"
