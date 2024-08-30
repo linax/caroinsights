@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { createGlobalState } from "react-hooks-global-state";
 
-const initialState = { isDarkmode: false };
+const initialState = { isDarkmode: true };
 const { useGlobalState } = createGlobalState(initialState);
 
 export const useThemeMode = () => {
