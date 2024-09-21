@@ -7,7 +7,6 @@ import LangDropdown from "./LangDropdown";
 import AvatarDropdown from "./AvatarDropdown";
 import TemplatesDropdown from "./TemplatesDropdown";
 import NotifyDropdown from "./NotifyDropdown";
-import SwitchDarkMode from "../SwitchDarkMode/SwitchDarkMode";
 import Input from "../Input/Input";
 import SearchModal from "./SearchModal";
 
@@ -76,7 +75,6 @@ const MainNav2: FC<MainNav2Props> = ({ className = "" }) => {
           <div className="flex-1 flex items-center justify-end ">
             <TemplatesDropdown />
             <LangDropdown />
-            <SwitchDarkMode />
             <NotifyDropdown className="hidden md:block" />
             <AvatarDropdown />
           </div>

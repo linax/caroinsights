@@ -2,7 +2,7 @@ import React, { FC } from "react";
 import Logo from "@/components/Logo/Logo";
 import Navigation from "@/components/Navigation/Navigation";
 import MenuBar from "@/components/MenuBar/MenuBar";
-import SwitchDarkMode from "@/components/SwitchDarkMode/SwitchDarkMode";
+
 import SearchModal from "./SearchModal";
 import Button from "../Button/Button";
 
@@ -24,7 +24,6 @@ const MainNav1: FC<MainNav1Props> = ({}) => {
 
           <div className="flex-1 flex items-center justify-end text-neutral-700 dark:text-neutral-100 space-x-1 rtl:space-x-reverse">
             <div className="hidden items-center lg:flex">
-              <SwitchDarkMode />
               <SearchModal />
               <div className="px-1"></div>
               <Button
@@ -36,7 +35,6 @@ const MainNav1: FC<MainNav1Props> = ({}) => {
               </Button>
             </div>
             <div className="flex items-center lg:hidden">
-              <SwitchDarkMode />
               <SearchModal />
             </div>
           </div>
