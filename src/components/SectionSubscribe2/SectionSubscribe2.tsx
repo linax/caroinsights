@@ -16,22 +16,21 @@ const SectionSubscribe2: FC<SectionSubscribe2Props> = ({ className = "" }) => {
       className={`nc-SectionSubscribe2 relative flex flex-col lg:flex-row items-center ${className}`}
     >
       <div className="flex-shrink-0 mb-14 lg:mb-0 lg:me-10 lg:w-2/5">
-        <h2 className="font-semibold text-4xl">Join our newsletter 🎉</h2>
+        <h2 className="font-semibold text-4xl">Newsletter de CoffeeTechInsights 🎉</h2>
         <span className="block mt-6 text-neutral-500 dark:text-neutral-400">
-          Read and share new perspectives on just about any topic. Everyone’s
-          welcome.
+          Pronto habilitaremos nuestro newsletter
         </span>
         <ul className="space-y-5 mt-10">
           <li className="flex items-center space-x-4 rtl:space-x-reverse">
             <Badge name="01" />
             <span className="font-medium text-neutral-700 dark:text-neutral-300">
-              Get more discount
+              Novedades en tecnología e Inteligencia artificial
             </span>
           </li>
           <li className="flex items-center space-x-4 rtl:space-x-reverse">
             <Badge color="red" name="02" />
             <span className="font-medium text-neutral-700 dark:text-neutral-300">
-              Get premium magazines
+              Novedades en emprendimiento e innovación
             </span>
           </li>
         </ul>

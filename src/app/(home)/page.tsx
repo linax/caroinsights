@@ -97,59 +97,13 @@ const PageHomeDemo4: React.FC = () => {
                 gridClass="sm:grid-cols-2 lg:grid-cols-3"
               />
             </div>
-            <SectionTrending
-              heading=""
-              className="py-16 lg:py-28"
-              posts={DEMO_POSTS.filter((_, i) => i < 8)}
-            />
-            <div className="relative py-16">
-              <BackgroundSection />
-              <SectionSliderNewCategories
-                heading="Subtopics of Travel"
-                subHeading="Discover 286,833 beautiful places to go"
-                categories={TRAVEL_SUBCATS}
-              />
-            </div>
+      
 
             <SectionMagazine6
               className="py-16 lg:py-28"
               heading="🧩 Editor Picks"
             />
-
-            <div className="relative py-16">
-              <BackgroundSection />
-              <SectionSliderNewAuthors
-                heading="Newest authors"
-                subHeading="Say hello to future creator potentials"
-                authors={DEMO_AUTHORS.filter((_, i) => i < 10)}
-              />
-            </div>
-
             <SectionSubscribe2 className="py-16 lg:py-28" />
-
-           
-
-            <SectionVideos className="py-16 lg:py-28" />
-
-        
-
-            <SectionBecomeAnAuthor
-              className="py-16 lg:py-28"
-              rightImg={becomAuthorImg}
-            />
-          </div>
-
-          <div className="dark bg-neutral-800 dark:bg-black dark:bg-opacity-20 text-neutral-100">
-            <div className="relative container">
-              <SectionGridPosts
-                className="py-16 lg:py-28"
-                postCardName="card11"
-                heading="Explore other latest articles"
-                subHeading="Explore 1129 other articles"
-                posts={DEMO_POSTS.filter((_, i) => i > 5 && i < 18)}
-                gridClass="sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 lg:gap-8"
-              />
-            </div>
           </div>
         </div>
       </div>
