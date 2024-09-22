@@ -87,7 +87,7 @@ const SectionGridPosts: FC<SectionGridPostsProps> = ({
         {posts.map((post) => renderCard(post))}
       </div>
       <div className="flex mt-20 justify-center items-center">
-        <ButtonPrimary loading>Show me more</ButtonPrimary>
+        <ButtonPrimary href="https://www.youtube.com/@CoffeeTechInsights">Todos los episodios</ButtonPrimary>
       </div>
     </div>
   );

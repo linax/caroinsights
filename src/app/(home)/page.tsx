@@ -92,7 +92,7 @@ const PageHomeDemo4: React.FC = () => {
                 headingIsCenter
                 postCardName="card10V2"
                 heading="Coffee Tech Insights - Videopodcast"
-                subHeading="Revisa nuestros últimos episodios 🥡"
+                subHeading="Revisa los últimos episodios de la temporada 1! 🥡"
                 posts={DEMO_POSTS_VIDEO}
                 gridClass="sm:grid-cols-2 lg:grid-cols-3"
               />
