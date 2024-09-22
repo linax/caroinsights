@@ -15,7 +15,7 @@ const   SectionHero2: FC<SectionHero2Props> = ({}) => {
   const renderOpenModalVideo = () => {
     return (
       <Button pattern="white" onClick={() => setShowVideo(!showVideo)}>
-        Play video
+        Ver intro
         <PlayIcon className="w-5 h-5 ms-2 rtl:rotate-180" />
       </Button>
     );
