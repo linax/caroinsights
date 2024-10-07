@@ -1,14 +1,26 @@
 "use client";
 
 import React, { Suspense, useEffect, useState } from "react";
+import { useParams } from 'next/navigation';
 import ReactPlayer from "react-player";
 import CategoryBadgeList from "@/components/CategoryBadgeList/CategoryBadgeList";
 import PostMeta2 from "@/components/PostMeta2/PostMeta2";
 import { DEMO_CATEGORIES } from "@/data/taxonomies";
 import SingleTitle from "@/app/(singles)/SingleTitle";
 import SingleMetaAction2 from "@/app/(singles)/SingleMetaAction2";
+import videoData from "@/data/jsons/__postsVideo.json";
 
 const PageSv = ({}) => {
+  const params = useParams();
+  const videoId = params.id; 
+  console.log("videoid",videoId);
+  console.log("params",params);
+    // Encuentra el video en el archivo JSON según el ID
+    const video = videoData.find((v) => v.id === videoId);
+
+    if (!video) {
+      return <div>Video no encontrado</div>;
+    }
   const [isRendered, setIsRendered] = useState(false);
 
   useEffect(() => {
@@ -16,11 +28,12 @@ const PageSv = ({}) => {
   }, []);
 
   const renderMainVideo = () => {
+   
     return (
       <div>
         {isRendered ? (
           <ReactPlayer
-            url="https://youtu.be/J0ulGaiZEmc?si=iGNwaBUBOPPaNy1k"
+            url={video.videoUrl}
             className="absolute inset-0"
             playing={true}
             width="100%"
@@ -43,7 +56,7 @@ const PageSv = ({}) => {
           />
           <SingleTitle
             mainClass="text-neutral-900 font-semibold text-3xl md:!leading-[120%] dark:text-neutral-100"
-            title={"Desde Chile al mundo 🌍: La historia de una chilena trabajando en Spotify"}
+            title={video.title}
           />
 
           <div className="w-full border-b border-neutral-100 dark:border-neutral-800" />
