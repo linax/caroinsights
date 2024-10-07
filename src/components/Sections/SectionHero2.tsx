@@ -25,7 +25,7 @@ const   SectionHero2: FC<SectionHero2Props> = ({}) => {
     return (
       <div className="aspect-w-16 aspect-h-9 ">
         <iframe
-          src={`https://www.youtube.com/embed/uc2f2yQElew?si=h3X4A7wot0eCqY8d&amp;start=571?autoplay=1`}
+          src={`https://www.youtube.com/embed/2OBTMQFSO40?si=b7HWhDMGKinKwSCC?autoplay=1`}
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen 
           title="Video coffee tech insights"
