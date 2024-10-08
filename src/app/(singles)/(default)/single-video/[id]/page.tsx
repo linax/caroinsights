@@ -7,7 +7,6 @@ import CategoryBadgeList from "@/components/CategoryBadgeList/CategoryBadgeList"
 import PostMeta2 from "@/components/PostMeta2/PostMeta2";
 import { DEMO_CATEGORIES } from "@/data/taxonomies";
 import SingleTitle from "@/app/(singles)/SingleTitle";
-import SingleMetaAction2 from "@/app/(singles)/SingleMetaAction2";
 import videoData from "@/data/jsons/__postsVideo.json";
 
 const PageSv = ({}) => {
@@ -63,7 +62,7 @@ const PageSv = ({}) => {
               hiddenCategories
               avatarRounded="rounded-full shadow-inner"
             />
-            <SingleMetaAction2 />
+          
           </div>
         </div>
       </div>
