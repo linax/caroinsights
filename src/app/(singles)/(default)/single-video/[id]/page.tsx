@@ -13,16 +13,12 @@ import videoData from "@/data/jsons/__postsVideo.json";
 const PageSv = ({}) => {
   const params = useParams();
   const videoId = params.id; 
-  console.log("videoid",videoId);
-  console.log("params",params);
-    // Encuentra el video en el archivo JSON según el ID
+    // Find Video according its ID
     const video = videoData.find((v) => v.id === videoId);
-
     if (!video) {
       return <div>Video no encontrado</div>;
     }
   const [isRendered, setIsRendered] = useState(false);
-
   useEffect(() => {
     setIsRendered(true);
   }, []);
