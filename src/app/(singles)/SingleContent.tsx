@@ -16,15 +16,25 @@ import { useParams } from "next/navigation";
 
 const demoTags = DEMO_TAGS.filter((_, i) => i < 9);
 
-export interface SingleContentProps {}
+import { PostDataType } from "@/data/types";
 
-const SingleContent: FC<SingleContentProps> = ({}) => {
+export interface SingleContentProps {
+  data?: PostDataType;
+}
+
+const SingleContent: FC<SingleContentProps> = ({ data }) => {
   const params = useParams();
-  const video = videoData.find((v) => v.id === params.id);
+  // @ts-ignore
+  const videoDataPost = videoData.find((v) => v.id === params.id);
+  const video = data || videoDataPost;
+
   if (!video) {
     return <div></div>;
   }
-  const content = video.content || "";
+  
+  // Handle content from demo json (content) or youtube (desc)
+  const rawContent = (video as any).content || video.desc || "";
+  const content = (video as any).content ? rawContent : rawContent.replace(/\n/g, "<br/>");
   
   const endedAnchorRef = useRef<HTMLDivElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
@@ -101,7 +111,7 @@ const SingleContent: FC<SingleContentProps> = ({}) => {
         {/* AUTHOR */}
         <div className="max-w-screen-md mx-auto border-b border-t border-neutral-100 dark:border-neutral-700"></div>
         <div className="max-w-screen-md mx-auto ">
-          <SingleAuthor />
+          <SingleAuthor author={(video as any).author} />
         </div>
       </div>
       <div

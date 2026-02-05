@@ -99,3 +99,48 @@ export async function getSeason3Episodes(): Promise<PostDataType[]> {
     return [];
   }
 }
+
+export async function getVideoById(id: string): Promise<PostDataType | null> {
+  if (!YOUTUBE_API_KEY) return null;
+
+  try {
+    const res = await fetch(
+      `https://www.googleapis.com/youtube/v3/videos?part=snippet,contentDetails,statistics&id=${id}&key=${YOUTUBE_API_KEY}`,
+      { next: { revalidate: 3600 } }
+    );
+
+    if (!res.ok) return null;
+
+    const data = await res.json();
+    if (!data.items || data.items.length === 0) return null;
+
+    const item = data.items[0];
+    const thumbnail =
+        item.snippet.thumbnails.maxres?.url ||
+        item.snippet.thumbnails.standard?.url ||
+        item.snippet.thumbnails.high?.url ||
+        item.snippet.thumbnails.medium?.url ||
+        "";
+
+    return {
+      id: item.id,
+      author: DEFAULT_AUTHOR,
+      date: item.snippet.publishedAt,
+      href: `/single-video/${item.id}` as Route,
+      categories: [DEFAULT_CATEGORY],
+      title: item.snippet.title,
+      featuredImage: thumbnail,
+      desc: item.snippet.description,
+      like: { count: parseInt(item.statistics?.likeCount || "0"), isLiked: false },
+      bookmark: { count: 0, isBookmarked: false },
+      commentCount: parseInt(item.statistics?.commentCount || "0"),
+      viewdCount: parseInt(item.statistics?.viewCount || "0"),
+      readingTime: 5,
+      postType: "video",
+      videoUrl: `https://www.youtube.com/watch?v=${item.id}`,
+    };
+  } catch (error) {
+    console.error("Error fetching video details:", error);
+    return null;
+  }
+}
