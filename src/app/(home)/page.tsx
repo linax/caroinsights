@@ -6,7 +6,15 @@ import SectionHero2 from "@/components/Sections/SectionHero2";
 import SectionMagazine6 from "@/components/Sections/SectionMagazine6";
 import SectionGridPosts from "@/components/Sections/SectionGridPosts";
 
-const PageHomeDemo4: React.FC = () => {
+import { getSeason3Episodes } from "@/utils/youtube-service";
+
+const PageHomeDemo4 = async () => {
+  const youtubePosts = await getSeason3Episodes();
+  const posts = youtubePosts.length > 0 ? youtubePosts : DEMO_POSTS_VIDEO;
+  const subHeading = youtubePosts.length > 0 
+    ? "Revisa los últimos episodios de la temporada 3! 🥡" 
+    : "Revisa los últimos episodios de la temporada 1! 🥡";
+
   return (
     <div className="nc-PageHomeDemo4 relative">
       <div className="relative">
@@ -19,8 +27,8 @@ const PageHomeDemo4: React.FC = () => {
                 headingIsCenter
                 postCardName="card10V2"
                 heading="Coffee Tech Insights - Videopodcast"
-                subHeading="Revisa los últimos episodios de la temporada 1! 🥡"
-                posts={DEMO_POSTS_VIDEO}
+                subHeading={subHeading}
+                posts={posts}
                 gridClass="sm:grid-cols-2 lg:grid-cols-3"
               />
             </div>
