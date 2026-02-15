@@ -10,7 +10,7 @@ const BuyMeACoffeeWidget = () => {
     script.src = "https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js";
     script.setAttribute("data-id", "coffeetechinsights");
     script.setAttribute("data-description", "Si eres fan de mi podcast apoyame con tu cafecito!");
-    script.setAttribute("data-message", "");
+    script.setAttribute("data-message", "Aporta con tu cafecito para continuar con el podcast! 🎙️");
     script.setAttribute("data-color", "#FF813F");
     script.setAttribute("data-position", "Right");
     script.setAttribute("data-x_margin", "18");
@@ -26,9 +26,6 @@ const BuyMeACoffeeWidget = () => {
     document.body.appendChild(script);
 
     return () => {
-       // Optional: cleanup if we wanted to remove it on unmount, 
-       // but typically widgets like this can persist or might leave artifacts.
-       // Usually better to leave it if it attaches to window.
        if (document.body.contains(script)) {
          document.body.removeChild(script);
        }

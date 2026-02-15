@@ -29,7 +29,7 @@ const PageHomeDemo4 = async () => {
         
         <SectionProjectsPortfolio />
 
-        <div className="relative overflow-hidden bg-orange-50/40 dark:bg-neutral-800/50 py-16 lg:py-28">
+        <div className="relative overflow-hidden bg-neutral-50 dark:bg-neutral-900/30 py-16 lg:py-28">
            {/* Noise texture overlay could be added here via CSS */}
           <div className="container relative">
              <div className="text-center max-w-2xl mx-auto mb-16">
