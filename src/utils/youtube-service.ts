@@ -27,6 +27,9 @@ interface YouTubePlaylistItem {
       standard?: { url: string };
     };
   };
+  status: {
+    privacyStatus: string;
+  };
 }
 
 interface YouTubeResponse {
@@ -52,7 +55,7 @@ export async function getSeason3Episodes(): Promise<PostDataType[]> {
 
   try {
     const res = await fetch(
-      `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=6&playlistId=${PLAYLIST_ID}&key=${YOUTUBE_API_KEY}`,
+      `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet,status&maxResults=10&playlistId=${PLAYLIST_ID}&key=${YOUTUBE_API_KEY}`,
       { next: { revalidate: 3600 } } // Revalidate every hour
     );
 
@@ -67,7 +70,10 @@ export async function getSeason3Episodes(): Promise<PostDataType[]> {
         return [];
     }
 
-    return data.items.map((item): PostDataType => {
+    // Filter only public videos
+    const publicItems = data.items.filter(item => item.status?.privacyStatus === 'public');
+
+    return publicItems.slice(0, 6).map((item): PostDataType => {
       const videoId = item.snippet.resourceId.videoId;
       const thumbnail =
         item.snippet.thumbnails.maxres?.url ||

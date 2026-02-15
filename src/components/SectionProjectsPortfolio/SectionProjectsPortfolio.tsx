@@ -54,7 +54,7 @@ const SectionProjectsPortfolio: FC<SectionProjectsPortfolioProps> = ({
                     Proyectos seleccionados que demuestran profundidad técnica y visión de producto.
                 </p>
             </div>
-            <ButtonSecondary href="https://github.com/caroinsights" targetBlank className="!border-neutral-200 dark:!border-neutral-700">
+            <ButtonSecondary href="https://github.com/linax" targetBlank className="!border-neutral-200 dark:!border-neutral-700">
                 <span>Ver GitHub</span>
                 <ArrowTopRightOnSquareIcon className="w-5 h-5 ms-2" />
             </ButtonSecondary>

@@ -13,7 +13,7 @@ const techStack = [
     { name: "NestJS", icon: "🦁" },
     { name: "TypeScript", icon: "TS" },
     { name: "Python", icon: "🐍" },
-    { name: "AWS", icon: "☁️" },
+    { name: "AWS/GCP", icon: "☁️" },
     { name: "Qiskit", icon: "⚛️" },
 ];
 
