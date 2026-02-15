@@ -30,6 +30,7 @@ const Button: FC<ButtonProps> = ({
   children,
   type,
   loading,
+  targetBlank,
   onClick = () => {},
 }) => {
   let colors =
@@ -58,7 +59,7 @@ const Button: FC<ButtonProps> = ({
 
   if (!!href) {
     return (
-      <Link href={href} className={`${CLASSES} `} onClick={onClick} type={type}>
+      <Link href={href} className={`${CLASSES} `} onClick={onClick} type={type} target={targetBlank ? "_blank" : undefined} rel={targetBlank ? "noopener noreferrer" : undefined}>
         {loading && <Loading />}
         {children || `This is Link`}
       </Link>
