@@ -5,7 +5,7 @@ import ButtonPrimary from "@/components/Button/ButtonPrimary";
 import NcModal from "@/components/NcModal/NcModal";
 import { PlayIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
-import Banner from "@/images/banner-dev.jpeg";
+import Banner from "@/images/clagos.jpeg";
 import Button from "../Button/Button";
 
 export interface SectionHero2Props {}

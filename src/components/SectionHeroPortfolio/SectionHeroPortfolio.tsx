@@ -1,6 +1,8 @@
 "use client";
 
 import React, { FC } from "react";
+import Image from "next/image";
+import podcastImage from "@/images/podcastimage.png";
 import ButtonPrimary from "@/components/Button/ButtonPrimary";
 import ButtonSecondary from "@/components/Button/ButtonSecondary";
 
@@ -22,9 +24,20 @@ const SectionHeroPortfolio: FC<SectionHeroPortfolioProps> = ({
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-indigo-500/20 rounded-full blur-[100px] z-0"></div>
 
         <div className="relative z-10 max-w-4xl mx-auto space-y-8 animate-fade-in-up">
+          <div className="flex justify-center">
+             <div className="relative w-48 h-32 md:w-64 md:h-40 rounded-3xl overflow-hidden border-4 border-white/10 shadow-2xl transition-all hover:scale-105">
+                <Image 
+                   src={podcastImage} 
+                   alt="Coffee Tech Insights" 
+                   fill 
+                   className="object-cover object-center scale-125"
+                   priority
+                />
+             </div>
+          </div>
           <h1 className="text-4xl md:text-6xl xl:text-7xl font-bold tracking-tight leading-[1.1]">
             <span className="block text-transparent bg-clip-text bg-gradient-to-r from-white to-neutral-400">
-              Uniendo Ingeniería Compleja
+             Conectando Tecnología
             </span>
             <span className="block mt-2">con Innovación Empresarial</span>
           </h1>

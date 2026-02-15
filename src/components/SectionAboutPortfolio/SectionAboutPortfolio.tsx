@@ -2,7 +2,7 @@
 
 import React, { FC } from "react";
 import Image from "next/image";
-import rightImg from "@/images/banner-dev.jpeg"; // Using existing image for now, can be replaced
+import rightImg from "@/images/clagos.jpeg"; // Using existing image for now, can be replaced
 
 export interface SectionAboutPortfolioProps {
   className?: string;
@@ -54,7 +54,7 @@ const SectionAboutPortfolio: FC<SectionAboutPortfolioProps> = ({
             </h2>
             <div className="text-neutral-600 dark:text-neutral-400 text-lg space-y-4">
               <p>
-                Con más de 12 años de experiencia en ingeniería de software, me especializo en unir los desafíos técnicos complejos con los objetivos estratégicos del negocio.
+                Soy Carolina Lagos, Ingeniero civil en informática y magister en innovación con casi 15 años de experiencia en ingeniería de software, me especializo en unir los desafíos técnicos complejos con los objetivos estratégicos del negocio.
               </p>
               <p>
                 Mi enfoque combina patrones arquitectónicos rigurosos con innovación de vanguardia, asegurando que las soluciones no solo sean funcionales, sino revolucionarias y accesibles para todos.
