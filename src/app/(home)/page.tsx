@@ -32,9 +32,9 @@ const PageHomeDemo4 = async () => {
            {/* Noise texture overlay could be added here via CSS */}
           <div className="container relative">
              <div className="text-center max-w-2xl mx-auto mb-16">
-                <span className="text-xs font-bold tracking-widest text-neutral-500 uppercase">Content Creation</span>
+                <span className="text-xs font-bold tracking-widest text-neutral-500 uppercase">Creación de Contenido</span>
                 <h2 className="mt-2 text-3xl md:text-5xl font-bold text-neutral-900 dark:text-neutral-100">
-                  Host of Coffee Tech Insights
+                  Anfitriona de Coffee Tech Insights
                 </h2>
              </div>
              

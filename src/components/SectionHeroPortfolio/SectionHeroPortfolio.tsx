@@ -24,25 +24,25 @@ const SectionHeroPortfolio: FC<SectionHeroPortfolioProps> = ({
         <div className="relative z-10 max-w-4xl mx-auto space-y-8 animate-fade-in-up">
           <h1 className="text-4xl md:text-6xl xl:text-7xl font-bold tracking-tight leading-[1.1]">
             <span className="block text-transparent bg-clip-text bg-gradient-to-r from-white to-neutral-400">
-              Bridging Complex Engineering
+              Uniendo Ingeniería Compleja
             </span>
-            <span className="block mt-2">with Business Innovation</span>
+            <span className="block mt-2">con Innovación Empresarial</span>
           </h1>
 
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-lg font-medium text-neutral-400 uppercase tracking-widest">
-            <span>Software Architecture</span>
+            <span>Arquitectura de Software</span>
             <span className="hidden md:inline text-neutral-600">•</span>
-            <span>Innovation strategy</span>
+            <span>Estrategia de Innovación</span>
             <span className="hidden md:inline text-neutral-600">•</span>
-            <span>Accessibility</span>
+            <span>Accesibilidad</span>
           </div>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-10">
             <ButtonPrimary href="#featured-projects" sizeClass="px-8 py-4">
-              View Work
+              Ver Trabajo
             </ButtonPrimary>
             <ButtonSecondary href="mailto:hello@caroinsights.com" sizeClass="px-8 py-4 bg-transparent border border-neutral-600 hover:bg-neutral-800 text-neutral-200">
-              Let's Talk
+              Hablemos
             </ButtonSecondary>
           </div>
         </div>

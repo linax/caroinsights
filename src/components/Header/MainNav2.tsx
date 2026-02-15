@@ -21,7 +21,7 @@ const MainNav2: FC<MainNav2Props> = ({ className = "" }) => {
         <div className="absolute inset-0"></div>
         <Input
           type="search"
-          placeholder="Search items"
+          placeholder="Buscar..."
           className="pr-5 md:pr-10 !w-40 md:!w-full group-hover:border-slate-300 dark:group-hover:border-slate-400 dark:placeholder:text-neutral-400"
           sizeClass="h-[42px] pl-4 py-3"
           autoFocus={false}
@@ -73,8 +73,6 @@ const MainNav2: FC<MainNav2Props> = ({ className = "" }) => {
           </div>
 
           <div className="flex-1 flex items-center justify-end ">
-            <TemplatesDropdown />
-            <LangDropdown />
             <NotifyDropdown className="hidden md:block" />
             <AvatarDropdown />
           </div>

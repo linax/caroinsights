@@ -38,7 +38,7 @@ const SectionSubscribe2: FC<SectionSubscribe2Props> = ({ className = "" }) => {
           <Input
             required
             aria-required
-            placeholder="Enter your email"
+            placeholder="Ingresa tu email"
             type="email"
           />
           <ButtonCircle

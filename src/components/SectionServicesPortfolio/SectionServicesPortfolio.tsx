@@ -16,26 +16,26 @@ export interface SectionServicesPortfolioProps {
 
 const services = [
   {
-    title: "Tech Architecture",
-    description: "Designing scalable systems, refactoring legacy codebases, and optimizing cloud infrastructure for high-performance applications.",
+    title: "Arquitectura Tecnológica",
+    description: "Diseño de sistemas escalables, refactorización de código heredado y optimización de infraestructura en la nube para aplicaciones de alto rendimiento.",
     icon: <CommandLineIcon className="w-8 h-8" />,
-    tags: ["Scalability", "Refactoring", "Cloud Native"],
+    tags: ["Escalabilidad", "Refactorización", "Nativo en la Nube"],
     bgClass: "bg-neutral-100 dark:bg-neutral-800",
     colSpan: "col-span-1 md:col-span-2 lg:col-span-2",
   },
   {
-    title: "Innovation Strategy",
-    description: "Guiding product discovery, MVP development, and technical feasibility studies to turn complex ideas into market-ready solutions.",
+    title: "Estrategia de Innovación",
+    description: "Guía en descubrimiento de producto, desarrollo de MVP y estudios de viabilidad técnica para convertir ideas complejas en soluciones listas para el mercado.",
     icon: <LightBulbIcon className="w-8 h-8" />,
-    tags: ["MVP", "Discovery", "Strategy"],
+    tags: ["MVP", "Descubrimiento", "Estrategia"],
     bgClass: "bg-indigo-50 dark:bg-indigo-900/20",
     colSpan: "col-span-1 md:col-span-1 lg:col-span-1",
   },
   {
-    title: "Entrepreneurship and podcast strategy",
-    description: "I'm an entrepreneur with many years of experience and working in my own podcast. I can help you with my experience to show your skills to others and bright",
+    title: "Emprendimiento y estrategia de podcast",
+    description: "Soy emprendedora con años de experiencia y conductora de mi propio podcast. Puedo ayudarte con mi experiencia a mostrar tus habilidades a otros y brillar.",
     icon: <CpuChipIcon className="w-8 h-8" />,
-    tags: ["R&D", "Quantum", "AI/ML"],
+    tags: ["I+D", "Quantum", "IA/ML"],
     bgClass: "bg-orange-50 dark:bg-orange-900/20",
     colSpan: "col-span-1 md:col-span-3 lg:col-span-3",
   }
@@ -52,10 +52,10 @@ const SectionServicesPortfolio: FC<SectionServicesPortfolioProps> = ({
       <div className="container relative">
         <div className="text-center max-w-2xl mx-auto mb-16">
           <h2 className="text-3xl md:text-5xl font-bold text-neutral-900 dark:text-neutral-100">
-            Specialized Services
+            Servicios Especializados
           </h2>
           <p className="mt-4 text-neutral-600 dark:text-neutral-400 text-lg">
-            High-impact consulting for complex technical challenges.
+            Consultoría de alto impacto para desafíos técnicos complejos.
           </p>
         </div>
 

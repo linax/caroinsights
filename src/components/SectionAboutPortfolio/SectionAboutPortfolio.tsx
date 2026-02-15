@@ -39,7 +39,7 @@ const SectionAboutPortfolio: FC<SectionAboutPortfolioProps> = ({
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
               <div className="absolute bottom-6 left-6 text-white">
-                <p className="text-sm font-semibold uppercase tracking-wider mb-1">Based in</p>
+                <p className="text-sm font-semibold uppercase tracking-wider mb-1">Con base en</p>
                 <p className="text-xl font-bold">Santiago, Chile 🇨🇱</p>
               </div>
             </div>
@@ -50,20 +50,20 @@ const SectionAboutPortfolio: FC<SectionAboutPortfolioProps> = ({
           {/* Content Side */}
           <div className="w-full lg:w-1/2 space-y-8">
             <h2 className="text-3xl md:text-5xl font-bold text-neutral-900 dark:text-neutral-100 leading-tight">
-              Hybrid Engineering for <span className="text-indigo-600 dark:text-indigo-400">Future-Ready</span> Business
+              Ingeniería Híbrida para <span className="text-indigo-600 dark:text-indigo-400">Negocios del Futuro</span>
             </h2>
             <div className="text-neutral-600 dark:text-neutral-400 text-lg space-y-4">
               <p>
-                With over 12 years of experience in software engineering, I specialize in bridging the gap between complex technical challenges and strategic business goals.
+                Con más de 12 años de experiencia en ingeniería de software, me especializo en unir los desafíos técnicos complejos con los objetivos estratégicos del negocio.
               </p>
               <p>
-                My approach combines rigorous architectural patterns with cutting-edge innovation, ensuring that solutions are not just functional, but revolutionary and accessible to all.
+                Mi enfoque combina patrones arquitectónicos rigurosos con innovación de vanguardia, asegurando que las soluciones no solo sean funcionales, sino revolucionarias y accesibles para todos.
               </p>
             </div>
 
             {/* Tech Stack Marquee */}
             <div className="pt-8 border-t border-neutral-200 dark:border-neutral-800">
-               <p className="text-sm font-semibold text-neutral-500 uppercase tracking-widest mb-6">Tech Stack</p>
+               <p className="text-sm font-semibold text-neutral-500 uppercase tracking-widest mb-6">Stack Tecnológico</p>
                
                <div className="relative flex overflow-hidden group">
                   <div className="animate-marquee whitespace-nowrap flex space-x-12">

@@ -47,7 +47,7 @@ const Footer: React.FC = () => {
             <div className="flex flex-col md:flex-row items-center gap-4">
                 <Logo />
                 <span className="text-sm text-neutral-500 dark:text-neutral-400">
-                    © {new Date().getFullYear()} Caro Insights. All rights reserved.
+                    © {new Date().getFullYear()} Caro Insights. Todos los derechos reservados.
                 </span>
             </div>
             

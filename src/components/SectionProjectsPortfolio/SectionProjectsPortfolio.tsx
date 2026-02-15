@@ -10,24 +10,24 @@ export interface SectionProjectsPortfolioProps {
 
 const projects = [
   {
-    title: "Geo-Accessibility API",
-    description: "A RESTful API that aggregates accessibility data from multiple sources to provide real-time navigation scores for wheelchair users in urban environments.",
+    title: "API de Geo-Accesibilidad",
+    description: "Una API RESTful que agrega datos de accesibilidad de múltiples fuentes para proporcionar puntuaciones de navegación en tiempo real e inclusiva en entornos urbanos.",
     stack: ["Node.js", "PostGIS", "Redis", "Docker"],
     githubUrl: "#",
     demoUrl: "#",
     color: "bg-blue-50 dark:bg-blue-900/10 border-blue-100 dark:border-blue-800"
   },
   {
-    title: "Santiago Dashboard",
-    description: "Interactive data visualization platform monitoring urban metrics in Santiago de Chile. Features real-time charts, map layers, and predictive models.",
+    title: "Panel de Santiago",
+    description: "Plataforma interactiva de visualización de datos para monitorear métricas urbanas en Santiago de Chile. Incluye gráficos en tiempo real, capas de mapas y modelos predictivos.",
     stack: ["React", "D3.js", "Mapbox", "AWS Lambda"],
     githubUrl: "#",
     demoUrl: "#",
     color: "bg-emerald-50 dark:bg-emerald-900/10 border-emerald-100 dark:border-emerald-800"
   },
   {
-    title: "Quantum Experiments",
-    description: "A collection of Jupyter notebooks and Python scripts demonstrating basic quantum algorithms using Qiskit, including Grover's Search and Shor's Algorithm.",
+    title: "Experimentos Cuánticos",
+    description: "Colección de notebooks de Jupyter y scripts en Python que demuestran algoritmos cuánticos básicos usando Qiskit, incluyendo Búsqueda de Grover y Algoritmo de Shor.",
     stack: ["Python", "Qiskit", "Jupyter", "Linear Algebra"],
     githubUrl: "#",
     demoUrl: "#",
@@ -48,14 +48,14 @@ const SectionProjectsPortfolio: FC<SectionProjectsPortfolioProps> = ({
         <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-4">
             <div className="max-w-2xl">
                 <h2 className="text-3xl md:text-5xl font-bold text-neutral-900 dark:text-neutral-100">
-                    Featured Work
+                    Trabajos Destacados
                 </h2>
                 <p className="mt-4 text-neutral-600 dark:text-neutral-400 text-lg">
-                    Selected projects demonstrating technical depth and product thinking.
+                    Proyectos seleccionados que demuestran profundidad técnica y visión de producto.
                 </p>
             </div>
             <ButtonSecondary href="https://github.com/caroinsights" targetBlank className="!border-neutral-200 dark:!border-neutral-700">
-                <span>View GitHub</span>
+                <span>Ver GitHub</span>
                 <ArrowTopRightOnSquareIcon className="w-5 h-5 ms-2" />
             </ButtonSecondary>
         </div>
@@ -75,9 +75,9 @@ const SectionProjectsPortfolio: FC<SectionProjectsPortfolioProps> = ({
                         </div>
                     </div>
                     <div className="mt-auto flex items-center gap-4 pt-6 border-t border-neutral-200/50 dark:border-neutral-700/50">
-                        <a href={project.githubUrl} className="text-sm font-semibold hover:text-indigo-600 dark:hover:text-indigo-400">Code</a>
+                        <a href={project.githubUrl} className="text-sm font-semibold hover:text-indigo-600 dark:hover:text-indigo-400">Código</a>
                         <span className="text-neutral-300 dark:text-neutral-600">|</span>
-                        <a href={project.demoUrl} className="text-sm font-semibold hover:text-indigo-600 dark:hover:text-indigo-400">Live Demo</a>
+                        <a href={project.demoUrl} className="text-sm font-semibold hover:text-indigo-600 dark:hover:text-indigo-400">Demo en Vivo</a>
                     </div>
                 </div>
             ))}
