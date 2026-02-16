@@ -33,17 +33,19 @@ const PageHomeDemo4 = async () => {
            {/* Noise texture overlay could be added here via CSS */}
           <div className="container relative">
              <div className="text-center max-w-2xl mx-auto mb-16">
-                <span className="text-xs font-bold tracking-widest text-neutral-500 uppercase">Creación de Contenido</span>
+                <span className="text-xs font-bold tracking-widest text-neutral-500 uppercase">Tecnología e innovación sin estereotipos</span>
                 <h2 className="mt-2 text-3xl md:text-5xl font-bold text-neutral-900 dark:text-neutral-100">
-                  Anfitriona de Coffee Tech Insights
+                 Mi podcast: Coffee Tech Insights
                 </h2>
                 <div className="mt-6 space-y-6">
                   <p className="text-lg text-neutral-600 dark:text-neutral-400">
-                    Podcast de tecnología e innovación sin estereotipos con más de 80 episodios.
+                    Te comparto uno de mis proyectos que me apasiona, con +80 episodios analizando el futuro de la tecnología y la innovación, buscando eliminar estereotipos.
+                    <br />
+                    Cada episodio es un insight que te ayudará a descubrir nuevas oportunidades en el mundo Tech.
                   </p>
                   <div className="flex flex-col items-center gap-4">
                      <p className="text-sm text-neutral-500">
-                        Si te gusta este contenido, ¡aporta con tu cafecito! ☕️
+                        Únete a esta comunidad con contenido exclusivo simplemente aportando con tu cafecito! ☕️
                      </p>
                      <a href="https://www.buymeacoffee.com/coffeetechinsights" target="_blank" rel="noopener noreferrer" className="hover:opacity-90 transition-opacity">
                         <img 

@@ -48,10 +48,10 @@ const SectionProjectsPortfolio: FC<SectionProjectsPortfolioProps> = ({
         <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-4">
             <div className="max-w-2xl">
                 <h2 className="text-3xl md:text-5xl font-bold text-neutral-900 dark:text-neutral-100">
-                    Trabajos Destacados
+                   Proyectos y experimentos
                 </h2>
                 <p className="mt-4 text-neutral-600 dark:text-neutral-400 text-lg">
-                    Proyectos seleccionados que demuestran profundidad técnica y visión de producto.
+                    Te comparto algunos de mis proyectos públicos, ¿hay alguno del que te gustaría conversar? hello@caroinsights.com
                 </p>
             </div>
             <ButtonSecondary href="https://github.com/linax" targetBlank className="!border-neutral-200 dark:!border-neutral-700">

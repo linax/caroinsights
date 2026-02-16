@@ -10,12 +10,12 @@ const BuyMeACoffeeWidget = () => {
     script.src = "https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js";
     script.setAttribute("data-id", "coffeetechinsights");
     script.setAttribute("data-description", "Si eres fan de mi podcast apoyame con tu cafecito!");
-    script.setAttribute("data-message", "Aporta con tu cafecito para continuar con el podcast! 🎙️");
+    script.setAttribute("data-message", "Únete a la comunidad de coffee tech insights aportando con tu cafecitot! 🎙️");
     script.setAttribute("data-color", "#FF813F");
     script.setAttribute("data-position", "Right");
     script.setAttribute("data-x_margin", "18");
     script.setAttribute("data-y_margin", "18");
-      
+
     script.onload = function() {
       // Force trigger event if needed
         var evt = document.createEvent('Event');

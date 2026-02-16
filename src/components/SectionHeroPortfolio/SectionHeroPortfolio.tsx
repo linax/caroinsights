@@ -37,17 +37,22 @@ const SectionHeroPortfolio: FC<SectionHeroPortfolioProps> = ({
           </div>
           <h1 className="text-4xl md:text-6xl xl:text-7xl font-bold tracking-tight leading-[1.1]">
             <span className="block text-transparent bg-clip-text bg-gradient-to-r from-white to-neutral-400">
-             Conectando Tecnología
+            Ingeniería de software
             </span>
-            <span className="block mt-2">con Innovación Empresarial</span>
+            <span className="block mt-2">con Visión de Negocio</span>
           </h1>
+
+          <div className="flex flex-wrap justify-center gap-4 text-sm md:text-lg font-medium text-neutral-400  tracking-widest">
+            Cerrando la brecha entre código y estrategia de negocio. <br />
+            +15 años de experiencia * Magíster en Innovación
+          </div>
 
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-lg font-medium text-neutral-400 uppercase tracking-widest">
             <span>Arquitectura de Software</span>
             <span className="hidden md:inline text-neutral-600">•</span>
-            <span>Estrategia de Innovación</span>
+            <span>Estrategia Técnica</span>
             <span className="hidden md:inline text-neutral-600">•</span>
-            <span>Accesibilidad</span>
+            <span>Innovación</span>
           </div>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-10">
