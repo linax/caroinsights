@@ -59,7 +59,7 @@ const PageHomeDemo4 = async () => {
               <SectionGridPosts
                 headingIsCenter
                 postCardName="card10V2"
-                heading=""
+                heading="Episodios recientes"
                 subHeading={subHeading}
                 posts={posts}
                 gridClass="sm:grid-cols-2 lg:grid-cols-3"

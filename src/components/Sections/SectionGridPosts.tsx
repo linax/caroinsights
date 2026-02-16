@@ -13,7 +13,7 @@ import Card14 from "@/components/Card14/Card14"
 import Card10V2 from "@/components/Card10/Card10V2"
 import Card15Podcast from "@/components/Card15Podcast/Card15Podcast"
 
-// OTHER DEMO WILL PASS PROPS
+
 const postsDemo: PostDataType[] = DEMO_POSTS.filter((_, i) => i > 7 && i < 17)
 
 //
@@ -27,7 +27,7 @@ export interface SectionGridPostsProps {
   postCardName?: "card3" | "card4" | "card7" | "card9" | "card10" | "card10V2" | "card11" | "card14" | "card15Podcast"
 }
 
-const SectionGridPosts: FC<SectionGridPostsProps> = ({ posts = postsDemo, postCardName = "card3", className = "", gridClass = "", heading, subHeading, headingIsCenter }) => {
+const   SectionGridPosts: FC<SectionGridPostsProps> = ({ posts = postsDemo, postCardName = "card3", className = "", gridClass = "", heading, subHeading, headingIsCenter }) => {
   const renderCard = (post: PostDataType) => {
     switch (postCardName) {
       case "card3":
@@ -52,7 +52,6 @@ const SectionGridPosts: FC<SectionGridPostsProps> = ({ posts = postsDemo, postCa
         return null
     }
   }
-  console.log(posts[0])
   return (
     <div className={`nc-SectionGridPosts relative ${className}`}>
       <Heading desc={subHeading} isCenter={headingIsCenter}>

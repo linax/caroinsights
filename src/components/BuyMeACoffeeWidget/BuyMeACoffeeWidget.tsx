@@ -15,7 +15,7 @@ const BuyMeACoffeeWidget = () => {
     script.setAttribute("data-position", "Right");
     script.setAttribute("data-x_margin", "18");
     script.setAttribute("data-y_margin", "18");
-    
+      
     script.onload = function() {
       // Force trigger event if needed
         var evt = document.createEvent('Event');
